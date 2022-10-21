@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_foreground">
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="your first name"
+        android:inputType="text"
+        android:id="@+id/etFname"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="your last name"
+        android:inputType="text"
+        android:id="@+id/etLname"
+        android:layout_toRightOf="@id/etFname"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etFname"
+        android:text="enter your name and family name here please"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEnter1"
+        android:text="Enter"
+        android:layout_marginTop="100dp"/>
+</RelativeLayout>
